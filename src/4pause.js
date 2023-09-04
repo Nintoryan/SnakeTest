@@ -43,7 +43,7 @@ class ScenePause extends Phaser.Scene{
         this.btnStart.on('pointerdown', this.resumeGame, this);
         
         document.addEventListener('keydown',(e)=>{
-            if(e.keyCode == 8 || e.keyCode == 10009 || e.keyCode == 461 || e.keyCode == 166 || e.keyCode == 196){
+            if((e.keyCode == 8 || e.keyCode == 10009 || e.keyCode == 461 || e.keyCode == 166 || e.keyCode == 196)&&gameState.onPause){
                 this.onPressExit()
             }
         })
