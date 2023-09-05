@@ -4,6 +4,7 @@ class MainMenu extends Phaser.Scene{
     }
 
     create(){
+        console.log('MainMenu is started!')
         game_session.action.startGameSession = new Date().getTime();
         console.log(game_session.action.startGameSession)
 

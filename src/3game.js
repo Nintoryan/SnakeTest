@@ -4,6 +4,7 @@ class SnakeGame extends Phaser.Scene{
     }
 
     create(){
+        console.log('play now!')
         game_session.action.startGame = new Date().getTime();
         console.log(game_session.action.startGame)
         gameState.onGame = true

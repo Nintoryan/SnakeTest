@@ -7,6 +7,7 @@ class Preloader extends Phaser.Scene{
 
     preload()
     {
+        console.log('Preloader starting!')
         this.loadText = this.add.text(game.config.width/2, game.config.height/2, 'ЗАГРУЗКА...', { fontFamily:'Nunito-black', fontStyle:'bold', fontSize: '40px', fill: 'white'});
         this.loadText2 = this.add.text(game.config.width/2, game.config.height/2, 'ЗАГРУЗКА...', { fontFamily:'Nunito', fontStyle:'bold', fontSize: '40px', fill: 'white'});
         this.loadText2.alpha = 0;
@@ -79,6 +80,7 @@ class Preloader extends Phaser.Scene{
     }
 
     create(){
+        console.log('Preloader Finish!')
         this.scene.start(mainMenu);
     }
 }
